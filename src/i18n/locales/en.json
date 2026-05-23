@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "book": "Book Appointment"
+  },
+  "hero": {
+    "badge": "Specialized Physiotherapy",
+    "title": "Your Journey to Relief Starts Here.",
+    "subtitle": "Imagine a day free of discomfort, where every movement flows with ease and you regain the joy of feeling your best. We turn this reality into your new normal.",
+    "cta_primary": "Book Appointment",
+    "cta_secondary": "Explore Services"
+  },
+  "stats": {
+    "experience": "Years of Experience",
+    "sessions": "Lives Transformed",
+    "satisfaction": "Satisfied Patients",
+    "specialties": "Specialties"
+  },
+  "about": {
+    "badge": "About Me",
+    "title": "Unlock the transformative potential of Specialized Physiotherapy and personalized Pilates.",
+    "intro": "My name is Larissa, a physiotherapist graduated from UNINORTE - Manaus (CREFITO 10/279910-F), and for over 5 years I have dedicated myself to transforming people's lives through Physiotherapy and Pilates.",
+    "mission": "My passion is helping you overcome your limitations and achieve a pain-free life. I believe each patient is unique, which is why I offer personalized and effective treatments.",
+    "pilates": "In addition to Physiotherapy, I am a Pilates enthusiast. I believe it is fundamental for rehabilitation and well-being, promoting muscle strengthening, flexibility, and body balance.",
+    "conclusion": "If you are looking for a dedicated, experienced physiotherapist who is passionate about helping people, schedule your appointment today!",
+    "bullets": {
+      "0": "Graduated from UNINORTE - Manaus",
+      "1": "CREFITO 10/279910-F",
+      "2": "Specialist in Orthopedics and Manual Therapy",
+      "3": "Mulligan Concept Specialist"
+    }
+  },
+  "services": {
+    "badge": "Services",
+    "title": "Specialized Treatments",
+    "subtitle": "Transform your well-being with a guided path towards relief, so you can enjoy every day with comfort and vitality.",
+    "items": {
+      "orthopedics": {
+        "title": "Orthopedics",
+        "desc": "Treatment of joint, muscle, and bone pain focusing on functional recovery and symptom relief."
+      },
+      "manual_therapy": {
+        "title": "Manual Therapy",
+        "desc": "Specific techniques to relieve pain and improve joint mobility and muscle flexibility."
+      },
+      "mulligan": {
+        "title": "Mulligan Concept",
+        "desc": "Innovative techniques for treating joint pain painlessly and with immediate results."
+      },
+      "myofascial": {
+        "title": "Myofascial Release",
+        "desc": "Release of trigger points that cause pain and muscle tension, improving circulation and movement."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What our patients say",
+    "subtitle": "Based on real patient reviews."
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Schedule your Assessment",
+    "subtitle": "Take the first step towards a pain-free life. Contact us and schedule your Physiotherapy or Pilates session.",
+    "info_title": "Contact Information",
+    "address": "Address",
+    "address_val": "Rod. Tertuliano Brito Xavier, 210 - Room 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
+    "phone": "Phone / WhatsApp",
+    "email": "E-mail",
+    "hours": "Working Hours",
+    "hours_val": "Monday to Friday: 08:00 AM to 06:00 PM",
+    "form_title": "Send a Message",
+    "form_name": "Full Name",
+    "form_email": "E-mail",
+    "form_phone": "Phone / WhatsApp",
+    "form_message": "How can we help?",
+    "form_submit": "Send Message",
+    "form_submitting": "Sending...",
+    "form_success": "Message sent successfully! We will contact you soon."
+  },
+  "footer": {
+    "description": "Specialized physiotherapy and clinical Pilates focused on chronic pain relief and well-being promotion. Our patient-centered approach aims at physical recovery and quality of life improvement.",
+    "quick_links": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved to Larissa Ramos."
+  }
+}

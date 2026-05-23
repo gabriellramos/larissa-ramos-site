@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "services": "Servicios",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "book": "Agendar Cita"
+  },
+  "hero": {
+    "badge": "Fisioterapia Especializada",
+    "title": "Tu Viaje hacia el Alivio Comienza Aquí.",
+    "subtitle": "Imagina un día libre de molestias, donde cada movimiento fluye con facilidad y recuperas la alegría de sentirte al máximo. Transformamos esta realidad en tu nueva normalidad.",
+    "cta_primary": "Agendar Cita",
+    "cta_secondary": "Conocer Servicios"
+  },
+  "stats": {
+    "experience": "Años de Experiencia",
+    "sessions": "Vidas Transformadas",
+    "satisfaction": "Pacientes Satisfechos",
+    "specialties": "Especialidades"
+  },
+  "about": {
+    "badge": "Sobre Mí",
+    "title": "Descubre el potencial transformador de la Fisioterapia Especializada y el Pilates personalizado.",
+    "intro": "Mi nombre es Larissa, fisioterapeuta graduada de la UNINORTE - Manaus (CREFITO 10/279910-F), y durante más de 5 años me he dedicado a transformar la vida de las personas a través de la Fisioterapia y el Pilates.",
+    "mission": "Mi pasión es ayudarte a superar tus limitaciones y lograr una vida sin dolor. Creo que cada paciente es único, por eso ofrezco tratamientos personalizados y efectivos.",
+    "pilates": "Además de la Fisioterapia, soy entusiasta del Pilates. Creo que es fundamental para la rehabilitación y el bienestar, promoviendo el fortalecimiento muscular, la flexibilidad y el equilibrio corporal.",
+    "conclusion": "Si buscas un fisioterapeuta dedicado, experimentado y apasionado por ayudar a las personas, ¡agenda tu cita hoy mismo!",
+    "bullets": {
+      "0": "Graduada de la UNINORTE - Manaus",
+      "1": "CREFITO 10/279910-F",
+      "2": "Especialista en Ortopedia y Terapia Manual",
+      "3": "Especialista en el Método Mulligan"
+    }
+  },
+  "services": {
+    "badge": "Servicios",
+    "title": "Tratamientos Especializados",
+    "subtitle": "Transforma tu bienestar con un camino guiado hacia el alivio, para que puedas disfrutar cada día con comodidad y vitalidad.",
+    "items": {
+      "orthopedics": {
+        "title": "Ortopedia",
+        "desc": "Tratamiento de dolores articulares, musculares y óseos enfocado en la recuperación funcional y alivio de síntomas."
+      },
+      "manual_therapy": {
+        "title": "Terapia Manual",
+        "desc": "Técnicas específicas para aliviar el dolor y mejorar la movilidad articular y flexibilidad muscular."
+      },
+      "mulligan": {
+        "title": "Método Mulligan",
+        "desc": "Técnicas innovadoras para tratar el dolor articular de forma indolora y con resultados inmediatos."
+      },
+      "myofascial": {
+        "title": "Liberación Miofascial",
+        "desc": "Liberación de puntos gatillo que causan dolor y tensión muscular, mejorando la circulación y el movimiento."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonios",
+    "title": "Lo que dicen nuestros pacientes",
+    "subtitle": "Basado en reseñas reales de pacientes."
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Agenda tu Evaluación",
+    "subtitle": "Da el primer paso hacia una vida sin dolor. Contáctanos y agenda tu sesión de Fisioterapia o Pilates.",
+    "info_title": "Información de Contacto",
+    "address": "Dirección",
+    "address_val": "Rod. Tertuliano Brito Xavier, 210 - Sala 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
+    "phone": "Teléfono / WhatsApp",
+    "email": "E-mail",
+    "hours": "Horario de Atención",
+    "hours_val": "Lunes a Viernes: 08:00 a 18:00",
+    "form_title": "Envía un Mensaje",
+    "form_name": "Nombre Completo",
+    "form_email": "E-mail",
+    "form_phone": "Teléfono / WhatsApp",
+    "form_message": "¿Cómo podemos ayudarte?",
+    "form_submit": "Enviar Mensaje",
+    "form_submitting": "Enviando...",
+    "form_success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto."
+  },
+  "footer": {
+    "description": "Fisioterapia especializada y Pilates clínico enfocado en el alivio del dolor crónico y la promoción del bienestar. Nuestro enfoque centrado en el paciente tiene como objetivo la recuperación física y la mejora de la calidad de vida.",
+    "quick_links": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados para Larissa Ramos."
+  }
+}

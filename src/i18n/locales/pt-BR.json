@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "testimonials": "Depoimentos",
+    "contact": "Contato",
+    "book": "Agendar Consulta"
+  },
+  "hero": {
+    "badge": "Fisioterapia Especializada",
+    "title": "Sua Jornada de Alívio Começa Aqui.",
+    "subtitle": "Imagine um dia livre de incômodos, onde cada movimento flui com leveza e você recupera a alegria de se sentir no auge. Transformamos essa realidade em seu novo normal.",
+    "cta_primary": "Agendar Consulta",
+    "cta_secondary": "Conhecer Serviços"
+  },
+  "stats": {
+    "experience": "Anos de Experiência",
+    "sessions": "Vidas Transformadas",
+    "satisfaction": "Pacientes Satisfeitos",
+    "specialties": "Especializações"
+  },
+  "about": {
+    "badge": "Sobre Mim",
+    "title": "Desvende o potencial transformador da Fisioterapia Especializada e do Pilates personalizado.",
+    "intro": "Meu nome é Larissa, fisioterapeuta graduada pela UNINORTE - Manaus (CREFITO 10/279910-F), e há mais de 5 anos me dedico a transformar a vida das pessoas através da Fisioterapia e do Pilates.",
+    "mission": "Minha paixão é ajudar você a superar suas limitações e alcançar uma vida livre de dores. Acredito que cada paciente é único, por isso ofereço tratamentos personalizados e eficazes.",
+    "pilates": "Além da Fisioterapia, sou entusiasta do Pilates. Acredito que ele é fundamental para a reabilitação e o bem-estar, promovendo fortalecimento muscular, flexibilidade e equilíbrio corporal.",
+    "conclusion": "Se você está buscando um fisioterapeuta dedicado, experiente e apaixonado por ajudar pessoas, agende sua consulta hoje mesmo!",
+    "bullets": {
+      "0": "Graduada pela UNINORTE - Manaus",
+      "1": "CREFITO 10/279910-F",
+      "2": "Especialista em Ortopedia e Terapia Manual",
+      "3": "Especialista no Método Mulligan"
+    }
+  },
+  "services": {
+    "badge": "Serviços",
+    "title": "Tratamentos Especializados",
+    "subtitle": "Transforme seu bem-estar com um caminho guiado rumo ao alívio, para que você possa desfrutar cada dia com conforto e vitalidade.",
+    "items": {
+      "orthopedics": {
+        "title": "Ortopedia",
+        "desc": "Tratamento de dores articulares, musculares e ósseas com foco na recuperação funcional e alívio de sintomas."
+      },
+      "manual_therapy": {
+        "title": "Terapia Manual",
+        "desc": "Técnicas específicas para aliviar dores e melhorar a mobilidade articular e a flexibilidade muscular."
+      },
+      "mulligan": {
+        "title": "Método Mulligan",
+        "desc": "Técnicas inovadoras para o tratamento de dores articulares de forma indolor e com resultados imediatos."
+      },
+      "myofascial": {
+        "title": "Liberação Miofascial",
+        "desc": "Liberação de pontos de gatilho que causam dor e tensão muscular, melhorando a circulação e o movimento."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Depoimentos",
+    "title": "O que dizem nossos pacientes",
+    "subtitle": "Baseado em avaliações reais de pacientes."
+  },
+  "contact": {
+    "badge": "Contato",
+    "title": "Agende sua Avaliação",
+    "subtitle": "Dê o primeiro passo para uma vida sem dor. Entre em contato e agende sua sessão de Fisioterapia ou Pilates.",
+    "info_title": "Informações de Contato",
+    "address": "Endereço",
+    "address_val": "Rod. Tertuliano Brito Xavier, 210 - Sala 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
+    "phone": "Telefone / WhatsApp",
+    "email": "E-mail",
+    "hours": "Horário de Funcionamento",
+    "hours_val": "Segunda a Sexta: 08:00 às 18:00",
+    "form_title": "Envie uma Mensagem",
+    "form_name": "Nome Completo",
+    "form_email": "E-mail",
+    "form_phone": "Telefone / WhatsApp",
+    "form_message": "Como podemos ajudar?",
+    "form_submit": "Enviar Mensagem",
+    "form_submitting": "Enviando...",
+    "form_success": "Mensagem enviada com sucesso! Entraremos em contato em breve."
+  },
+  "footer": {
+    "description": "Fisioterapia especializada e Pilates clínico focado em alívio de dores crônicas e promoção de bem-estar. Nossa abordagem centrada no paciente visa à recuperação física e melhoria da qualidade de vida.",
+    "quick_links": "Links Rápidos",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados para Larissa Ramos."
+  }
+}
