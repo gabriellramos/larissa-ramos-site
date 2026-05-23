@@ -29,7 +29,7 @@ export const About = () => {
               {t('about.title')}
             </h2>
             <div className="text-lg text-surface-text-variant leading-relaxed space-y-4">
-              <p>{t('about.intro')}</p>
+              <p>{t('about.intro', { years: new Date().getFullYear() - 2018 })}</p>
               <p>{t('about.mission')}</p>
               <p>{t('about.pilates')}</p>
               <p className="font-semibold text-primary">{t('about.conclusion')}</p>

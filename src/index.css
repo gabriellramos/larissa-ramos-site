@@ -24,3 +24,64 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Elfsight Google Reviews Widget - Dark Theme Overrides */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 {
+    /* Variables fallback */
+    --eapps-google-reviews-text-color: #F9F9F7 !important;
+    --eapps-google-reviews-name-color: #F9F9F7 !important;
+    --eapps-google-reviews-title-color: #F9F9F7 !important;
+    --eapps-google-reviews-date-color: #A1A1AA !important;
+    --eapps-google-reviews-bg-color: transparent !important;
+  }
+
+  /* Aggressive text color overrides */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="eapps-google-reviews"] {
+    color: #F9F9F7 !important;
+  }
+
+  /* Keep the specific gray for dates/subtitles */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="date"],
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="subtitle"] {
+    color: #A1A1AA !important;
+  }
+
+  /* Fix the review cards background to match the site's dark aesthetic */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="review-item"],
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="item-container"],
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="Review__Container"] {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 1.5rem !important;
+    box-shadow: none !important;
+  }
+
+  /* Keep links blue */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 a[href] {
+    color: #60A5FA !important;
+  }
+
+  /* Except for the main primary button which should keep its background and white text */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 a[class*="Button"],
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 [class*="Button"] {
+    color: #FFFFFF !important;
+    background-color: #3B82F6 !important;
+    border: none !important;
+  }
+
+  /* Do not mess up SVG stars and icons */
+  .elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503 svg {
+    fill: currentColor;
+  }
+}

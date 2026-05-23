@@ -13,7 +13,6 @@ import { z } from 'zod';
 
 const contactSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
-  email: z.string().email({ message: 'E-mail inválido' }),
   phone: z.string().min(10, { message: 'Telefone inválido' }),
   message: z.string().min(10, { message: 'Mensagem deve ter no mínimo 10 caracteres' }),
 });
@@ -23,7 +22,6 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 export const Contact = () => {
   const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
 
   const {
     register,
@@ -36,13 +34,15 @@ export const Contact = () => {
 
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log('Form data:', data);
+    
+    const phoneNumber = "5548991033490";
+    const text = `Olá! Vim pelo site e gostaria de falar com a clínica.\n\n*Nome:* ${data.name}\n*Telefone:* ${data.phone}\n\n*Mensagem:*\n${data.message}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
     setIsSubmitting(false);
-    setSuccessMessage('Mensagem enviada com sucesso! Entraremos em contato em breve.');
     reset();
-    setTimeout(() => setSuccessMessage(''), 5000);
   };
 
   return (
@@ -101,34 +101,34 @@ export const Contact = () => {
                   </div>
                 </li>
               </ul>
+
+              {/* Google Maps Embed */}
+              <div className="mt-8 rounded-xl overflow-hidden shadow-sm h-48 w-full border border-primary/10">
+                <iframe 
+                  src="https://maps.google.com/maps?q=Rod.%20Tertuliano%20Brito%20Xavier,%20210%20-%20Canasvieiras,%20Florian%C3%B3polis%20-%20SC,%2088054-000&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={false} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps Location"
+                />
+              </div>
             </Card>
           </div>
 
           {/* Contact Form */}
-          <Card className="p-8 lg:p-10 bg-white shadow-xl shadow-primary/5">
+          <Card className="p-8 lg:p-10 bg-white shadow-xl shadow-primary/5 h-fit">
             <h3 className="text-2xl font-bold font-sans mb-6 text-surface-text">{t('contact.form_title')}</h3>
             
-            {successMessage && (
-              <div className="mb-6 p-4 bg-primary-container/50 border border-primary/20 text-primary font-semibold rounded-xl text-sm">
-                {t('contact.form_success')}
-              </div>
-            )}
-
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
-              <Input
-                label={t('contact.form_name')}
-                placeholder=""
-                {...register('name')}
-                error={errors.name?.message}
-              />
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <Input
-                  label={t('contact.form_email')}
-                  type="email"
+                  label={t('contact.form_name')}
                   placeholder=""
-                  {...register('email')}
-                  error={errors.email?.message}
+                  {...register('name')}
+                  error={errors.name?.message}
                 />
                 <Input
                   label={t('contact.form_phone')}

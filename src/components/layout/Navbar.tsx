@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Globe } from 'lucide-react';
-import { Container } from './Container';
 import { Button } from '../ui/Button';
 
 export const Navbar = () => {
@@ -32,14 +31,14 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-4 left-4 right-4 md:top-6 md:left-1/2 md:-translate-x-1/2 md:w-[calc(100%-3rem)] md:max-w-6xl z-40 transition-all duration-300 rounded-[2rem] border ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-lg shadow-[0_4px_30px_rgba(0,0,0,0.05)] py-4'
-          : 'bg-transparent py-6'
+          ? 'bg-white/90 backdrop-blur-xl border-outline/10 shadow-[0_8px_32px_rgba(0,0,0,0.05)] py-3'
+          : 'bg-transparent border-transparent py-4'
       }`}
     >
-      <Container className="flex items-center justify-between">
-        <a href="#home" className="text-2xl font-bold font-sans text-primary hover:text-cta transition-colors">
+      <div className="px-6 flex items-center justify-between">
+        <a href="#home" className={`text-xl md:text-2xl font-bold font-sans transition-colors drop-shadow-sm ${isScrolled ? 'text-primary' : 'text-white'}`}>
           Dra. Larissa Ramos
         </a>
 
@@ -50,7 +49,11 @@ export const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold text-surface-text-variant hover:text-primary transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isScrolled 
+                    ? 'text-surface-text-variant hover:text-primary' 
+                    : 'text-white/80 hover:text-white'
+                }`}
               >
                 {link.name}
               </a>
@@ -59,18 +62,27 @@ export const Navbar = () => {
 
           <div className="flex items-center gap-4">
             <div className="group relative">
-              <button className="flex items-center gap-1.5 text-sm font-semibold text-surface-text-variant hover:text-primary transition-colors cursor-pointer p-2">
+              <button className={`flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer p-2 ${
+                isScrolled ? 'text-surface-text-variant hover:text-primary' : 'text-white/80 hover:text-white'
+              }`}>
                 <Globe className="w-4 h-4" />
                 {i18n.language.split('-')[0].toUpperCase()}
               </button>
-              <div className="absolute right-0 mt-2 w-32 rounded-xl bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-outline/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 origin-top-right transform scale-95 group-hover:scale-100">
-                <button onClick={() => changeLanguage('pt-BR')} className="block w-full text-left px-4 py-3 text-sm hover:bg-surface-container rounded-t-xl transition-colors cursor-pointer font-medium">PT-BR</button>
-                <button onClick={() => changeLanguage('en')} className="block w-full text-left px-4 py-3 text-sm hover:bg-surface-container transition-colors cursor-pointer font-medium">EN</button>
-                <button onClick={() => changeLanguage('es')} className="block w-full text-left px-4 py-3 text-sm hover:bg-surface-container rounded-b-xl transition-colors cursor-pointer font-medium">ES</button>
+              <div className={`absolute right-0 mt-2 w-32 rounded-xl backdrop-blur-2xl shadow-[0_10px_40px_rgba(0,0,0,0.2)] border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 origin-top-right transform scale-95 group-hover:scale-100 ${
+                isScrolled ? 'bg-white border-outline/10' : 'bg-white/10 border-white/20'
+              }`}>
+                <button onClick={() => changeLanguage('pt-BR')} className={`block w-full text-left px-4 py-3 text-sm rounded-t-xl transition-colors cursor-pointer font-medium ${isScrolled ? 'text-surface-text hover:bg-surface-container' : 'text-white hover:bg-white/20'}`}>PT-BR</button>
+                <button onClick={() => changeLanguage('en')} className={`block w-full text-left px-4 py-3 text-sm transition-colors cursor-pointer font-medium ${isScrolled ? 'text-surface-text hover:bg-surface-container' : 'text-white hover:bg-white/20'}`}>EN</button>
+                <button onClick={() => changeLanguage('es')} className={`block w-full text-left px-4 py-3 text-sm rounded-b-xl transition-colors cursor-pointer font-medium ${isScrolled ? 'text-surface-text hover:bg-surface-container' : 'text-white hover:bg-white/20'}`}>ES</button>
               </div>
             </div>
             
-            <Button variant="primary" size="sm" onClick={() => window.open('https://wa.me/5500000000000', '_blank')}>
+            <Button 
+              variant={isScrolled ? 'primary' : 'glass'} 
+              size="sm" 
+              className={isScrolled ? '' : 'bg-white/20 hover:bg-white/30 text-white border-white/30'}
+              onClick={() => window.open('https://wa.me/5548991033490', '_blank')}
+            >
               {t('nav.book')}
             </Button>
           </div>
@@ -78,32 +90,32 @@ export const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-surface-text-variant hover:text-primary transition-colors focus:outline-none cursor-pointer p-2"
+          className={`md:hidden transition-colors focus:outline-none cursor-pointer p-2 ${isScrolled ? 'text-surface-text hover:text-primary' : 'text-white hover:text-white/80'}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
-      </Container>
+      </div>
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl shadow-lg border-t border-outline/10 p-6 flex flex-col gap-4 animate-in slide-in-from-top-4 duration-200">
+        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-[#0A1A18]/95 backdrop-blur-xl shadow-lg border border-white/10 rounded-2xl p-6 flex flex-col gap-4 mx-4 animate-in fade-in slide-in-from-top-4 duration-200">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-lg font-semibold text-surface-text-variant hover:text-primary transition-colors py-2"
+              className="text-lg font-semibold text-white/90 hover:text-white transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <div className="flex items-center gap-4 py-4 border-t border-outline/10">
-            <button onClick={() => changeLanguage('pt-BR')} className={`text-sm font-bold ${i18n.language === 'pt-BR' ? 'text-primary' : 'text-surface-text-variant'}`}>PT-BR</button>
-            <button onClick={() => changeLanguage('en')} className={`text-sm font-bold ${i18n.language === 'en' ? 'text-primary' : 'text-surface-text-variant'}`}>EN</button>
-            <button onClick={() => changeLanguage('es')} className={`text-sm font-bold ${i18n.language === 'es' ? 'text-primary' : 'text-surface-text-variant'}`}>ES</button>
+          <div className="flex items-center gap-4 py-4 border-t border-white/10">
+            <button onClick={() => changeLanguage('pt-BR')} className={`text-sm font-bold ${i18n.language === 'pt-BR' ? 'text-primary-container' : 'text-white/60'}`}>PT-BR</button>
+            <button onClick={() => changeLanguage('en')} className={`text-sm font-bold ${i18n.language === 'en' ? 'text-primary-container' : 'text-white/60'}`}>EN</button>
+            <button onClick={() => changeLanguage('es')} className={`text-sm font-bold ${i18n.language === 'es' ? 'text-primary-container' : 'text-white/60'}`}>ES</button>
           </div>
-          <Button variant="primary" className="w-full mt-2" onClick={() => window.open('https://wa.me/5500000000000', '_blank')}>
+          <Button variant="primary" className="w-full mt-2" onClick={() => window.open('https://wa.me/5548991033490', '_blank')}>
             {t('nav.book')}
           </Button>
         </div>

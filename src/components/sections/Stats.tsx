@@ -3,10 +3,12 @@ import { Container } from '../layout/Container';
 
 export const Stats = () => {
   const { t } = useTranslation();
+  const experienceYears = new Date().getFullYear() - 2018;
+  const sessionsCount = experienceYears;
 
   const stats = [
-    { value: '5+', label: t('stats.experience') },
-    { value: '5k+', label: t('stats.sessions') },
+    { value: `${experienceYears}+`, label: t('stats.experience') },
+    { value: `${sessionsCount}k+`, label: t('stats.sessions') },
     { value: '98%', label: t('stats.satisfaction') },
     { value: '4', label: t('stats.specialties') },
   ];

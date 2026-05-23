@@ -8,11 +8,13 @@
     "book": "Agendar Consulta"
   },
   "hero": {
-    "badge": "Fisioterapia Especializada",
-    "title": "Sua Jornada de Alívio Começa Aqui.",
-    "subtitle": "Imagine um dia livre de incômodos, onde cada movimento flui com leveza e você recupera a alegria de se sentir no auge. Transformamos essa realidade em seu novo normal.",
-    "cta_primary": "Agendar Consulta",
-    "cta_secondary": "Conhecer Serviços"
+    "badge": "Fisioterapia Esportiva & Reabilitação Avançada",
+    "title": "Movimente-se sem dor. Viva com liberdade.",
+    "subtitle": "Especialista em coluna, lesões no joelho e reabilitação de atletas. Resultados reais através de um raciocínio clínico avançado.",
+    "cta_primary": "Agende sua Avaliação",
+    "cta_secondary": "Conheça os Tratamentos",
+    "hud_title": "Metodologia Inovadora",
+    "hud_subtitle": "Recuperação acelerada"
   },
   "stats": {
     "experience": "Anos de Experiência",
@@ -23,44 +25,57 @@
   "about": {
     "badge": "Sobre Mim",
     "title": "Desvende o potencial transformador da Fisioterapia Especializada e do Pilates personalizado.",
-    "intro": "Meu nome é Larissa, fisioterapeuta graduada pela UNINORTE - Manaus (CREFITO 10/279910-F), e há mais de 5 anos me dedico a transformar a vida das pessoas através da Fisioterapia e do Pilates.",
+    "intro": "Meu nome é Larissa, fisioterapeuta graduada pela UNINORTE - Manaus (CREFITO 10/279910-F), e há mais de {{years}} anos me dedico a transformar a vida das pessoas através da Fisioterapia e do Pilates.",
     "mission": "Minha paixão é ajudar você a superar suas limitações e alcançar uma vida livre de dores. Acredito que cada paciente é único, por isso ofereço tratamentos personalizados e eficazes.",
     "pilates": "Além da Fisioterapia, sou entusiasta do Pilates. Acredito que ele é fundamental para a reabilitação e o bem-estar, promovendo fortalecimento muscular, flexibilidade e equilíbrio corporal.",
     "conclusion": "Se você está buscando um fisioterapeuta dedicado, experiente e apaixonado por ajudar pessoas, agende sua consulta hoje mesmo!",
     "bullets": {
-      "0": "Graduada pela UNINORTE - Manaus",
-      "1": "CREFITO 10/279910-F",
-      "2": "Especialista em Ortopedia e Terapia Manual",
-      "3": "Especialista no Método Mulligan"
+      "0": "Especialista em Colunas & Ortopedia",
+      "1": "Acompanhamento em cirurgias com time médico renomado",
+      "2": "RCA (Raciocínio Clínico Avançado)",
+      "3": "Especialista em Fisioterapia Esportiva e Reabilitação"
     }
   },
   "services": {
-    "badge": "Serviços",
+    "badge": "Especialidades",
     "title": "Tratamentos Especializados",
     "subtitle": "Transforme seu bem-estar com um caminho guiado rumo ao alívio, para que você possa desfrutar cada dia com conforto e vitalidade.",
     "items": {
-      "orthopedics": {
-        "title": "Ortopedia",
-        "desc": "Tratamento de dores articulares, musculares e ósseas com foco na recuperação funcional e alívio de sintomas."
+      "spine_orthopedics": {
+        "title": "Especialista em Coluna & Ortopedia",
+        "desc": "Tratamento de dores articulares, musculares e ósseas com foco absoluto na recuperação funcional e alívio de sintomas da coluna."
+      },
+      "surgery_rehab": {
+        "title": "Reabilitação Pós-Cirúrgica",
+        "desc": "Acompanhamento pré e pós-cirúrgico para lesões no joelho, com atuação direta e acompanhamento em cirurgias com time médico especializado."
+      },
+      "sports": {
+        "title": "Fisioterapia Esportiva",
+        "desc": "Reabilitação de atletas focada no rápido retorno ao esporte e prevenção de lesões com Raciocínio Clínico Avançado (RCA)."
+      },
+      "rca_mulligan": {
+        "title": "RCA & Método Mulligan",
+        "desc": "Técnicas inovadoras de Raciocínio Clínico Avançado para o tratamento de dores articulares de forma precisa e com resultados imediatos."
       },
       "manual_therapy": {
-        "title": "Terapia Manual",
-        "desc": "Técnicas específicas para aliviar dores e melhorar a mobilidade articular e a flexibilidade muscular."
+        "title": "Terapia Manual & Miofascial",
+        "desc": "Liberação de pontos de gatilho, alívio de tensões e melhora na mobilidade articular e flexibilidade muscular."
       },
-      "mulligan": {
-        "title": "Método Mulligan",
-        "desc": "Técnicas inovadoras para o tratamento de dores articulares de forma indolor e com resultados imediatos."
-      },
-      "myofascial": {
-        "title": "Liberação Miofascial",
-        "desc": "Liberação de pontos de gatilho que causam dor e tensão muscular, melhorando a circulação e o movimento."
+      "pilates": {
+        "title": "Pilates Clínico",
+        "desc": "Exercícios direcionados para reabilitação, fortalecimento muscular, flexibilidade e equilíbrio corporal, conduzidos por uma equipe integrada."
       }
     }
+  },
+  "gallery": {
+    "badge": "Nossa Clínica",
+    "title": "Conheça Nosso Espaço",
+    "subtitle": "Um ambiente moderno, acolhedor e preparado com os melhores equipamentos para a sua recuperação e prática de Pilates."
   },
   "testimonials": {
     "badge": "Depoimentos",
     "title": "O que dizem nossos pacientes",
-    "subtitle": "Baseado em avaliações reais de pacientes."
+    "subtitle": "Baseado em +50 avaliações no Google"
   },
   "contact": {
     "badge": "Contato",
