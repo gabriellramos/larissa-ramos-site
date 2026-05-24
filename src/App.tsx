@@ -20,7 +20,7 @@ function App() {
         <Hero />
         
         {/* Overlapping Sheet Pattern */}
-        <div className="relative z-20 bg-surface rounded-t-[40px] shadow-[0_-20px_40px_rgba(0,0,0,0.1)] -mt-20 pt-8 pb-10 overflow-hidden">
+        <div className="relative z-20 bg-surface rounded-t-[40px] shadow-[0_-20px_40px_rgba(0,0,0,0.1)] -mt-20 pb-10 overflow-hidden">
           <Stats />
           <About />
           <ClinicGallery />
