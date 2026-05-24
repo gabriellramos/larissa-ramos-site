@@ -3,6 +3,7 @@ import { Container } from '../layout/Container';
 import { Section } from '../layout/Section';
 import { Badge } from '../ui/Badge';
 import { useTranslation } from 'react-i18next';
+import { ScrollReveal } from '../ui/ScrollReveal';
 
 export const About = () => {
   const { t } = useTranslation();
@@ -10,6 +11,7 @@ export const About = () => {
   return (
     <Section id="about" className="bg-surface-container/50 overflow-clip relative">
       <Container>
+        <ScrollReveal>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           <div className="relative w-full max-w-sm mx-auto h-auto pt-8">
             {/* Ambient glowing backdrops - Static for top-tier GPU performance */}
@@ -78,6 +80,7 @@ export const About = () => {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </Container>
     </Section>
   );

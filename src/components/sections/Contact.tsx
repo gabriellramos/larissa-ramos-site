@@ -10,6 +10,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { ScrollReveal } from '../ui/ScrollReveal';
 
 const contactSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -48,6 +49,7 @@ export const Contact = () => {
   return (
     <Section id="contact" className="relative bg-surface-container/30">
       <Container>
+        <ScrollReveal>
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 gap-4">
           <Badge variant="outline">{t('contact.badge')}</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold font-sans text-surface-text">
@@ -57,7 +59,9 @@ export const Contact = () => {
             {t('contact.subtitle')}
           </p>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal delay={200}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="flex flex-col gap-8">
@@ -151,6 +155,7 @@ export const Contact = () => {
             </form>
           </Card>
         </div>
+        </ScrollReveal>
       </Container>
     </Section>
   );

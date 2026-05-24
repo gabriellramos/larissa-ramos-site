@@ -5,6 +5,7 @@ import { Section } from '../layout/Section';
 import { Card } from '../ui/Card';
 import { Badge } from '../ui/Badge';
 import { Activity, ShieldPlus, Dumbbell, Brain, Hand, PersonStanding } from 'lucide-react';
+import { ScrollReveal } from '../ui/ScrollReveal';
 
 export const Services = () => {
   const { t } = useTranslation();
@@ -45,6 +46,7 @@ export const Services = () => {
   return (
     <Section id="services" className="relative">
       <Container>
+        <ScrollReveal>
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 gap-4">
           <Badge variant="primary">{t('services.badge')}</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold font-sans text-surface-text">
@@ -54,7 +56,9 @@ export const Services = () => {
             {t('services.subtitle')}
           </p>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal delay={200}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <Card key={i} hoverLift className="p-8 group cursor-pointer border-transparent hover:border-primary/20">
@@ -70,6 +74,7 @@ export const Services = () => {
             </Card>
           ))}
         </div>
+        </ScrollReveal>
       </Container>
     </Section>
   );

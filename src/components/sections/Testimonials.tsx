@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '../layout/Container';
 import { Section } from '../layout/Section';
 import { Badge } from '../ui/Badge';
+import { ScrollReveal } from '../ui/ScrollReveal';
 
 export const Testimonials = () => {
   const { t } = useTranslation();
@@ -48,17 +49,21 @@ export const Testimonials = () => {
   return (
     <Section id="testimonials" className="bg-surface-text text-surface">
       <Container>
+        <ScrollReveal>
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 gap-4">
           <Badge variant="glass" className="border-white/20">{t('testimonials.badge')}</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold font-sans text-white">
             {t('testimonials.title')}
           </h2>
         </div>
+        </ScrollReveal>
 
         {/* Elfsight Google Reviews Widget */}
+        <ScrollReveal delay={200}>
         <div className="w-full mt-8">
           <div ref={widgetRef} className="elfsight-app-13d1fe27-5b03-4f52-bf1f-834670ff0503" data-elfsight-app-lazy></div>
         </div>
+        </ScrollReveal>
       </Container>
     </Section>
   );
