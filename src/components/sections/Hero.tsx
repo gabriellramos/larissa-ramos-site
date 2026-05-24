@@ -16,7 +16,7 @@ export const Hero = () => {
         <img 
           src="/hero-bg.JPG" 
           alt="Fisioterapia Background" 
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover object-right lg:object-center opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0a1514] via-[#0a1514]/80 lg:via-[#0a1514]/50 to-transparent" />
       </div>

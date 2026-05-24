@@ -10,7 +10,11 @@ export const Footer = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-2xl font-bold font-sans text-primary-container mb-4">Dra. Larissa Ramos</h2>
+            <img 
+              src="/logo-1.png" 
+              alt="Dra. Larissa Ramos" 
+              className="h-10 md:h-12 w-auto object-contain brightness-0 invert mb-6"
+            />
             <p className="text-surface-container/80 max-w-sm mb-8 text-base leading-relaxed">
               {t('footer.description')}
             </p>

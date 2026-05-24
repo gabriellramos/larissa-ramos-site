@@ -9,12 +9,11 @@ import { Badge } from '../ui/Badge';
 import { Camera, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const IMAGES = [
-  'https://static.wixstatic.com/media/dc99cff9-930d-450b-b61f-cebda8d6dfe5.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_avif,quality_auto/foto.jpg',
-  'https://static.wixstatic.com/media/751d5b72-61c8-4f54-b295-7a9a4f42d89a_edi.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_avif,quality_auto/foto.jpg',
-  'https://static.wixstatic.com/media/d37641_f96cddea1c614df6b70f8fe8a3a04d58~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_avif,quality_auto/foto.jpg',
-  'https://static.wixstatic.com/media/d37641_2b7d3caa72764f6f8f4236bbe65db24d~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_avif,quality_auto/foto.jpg',
-  'https://static.wixstatic.com/media/dc99cff9-930d-450b-b61f-cebda8d6dfe5.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_avif,quality_auto/foto.jpg',
-  'https://static.wixstatic.com/media/751d5b72-61c8-4f54-b295-7a9a4f42d89a_edi.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_avif,quality_auto/foto.jpg'
+  '/carrosel/791A011D-072B-4B65-B723-3624C541C2EB.JPG',
+  '/carrosel/1069BAD9-44EB-4613-BFE1-5921F0BF8DC1.JPG',
+  '/carrosel/0CDF7255-9C71-4C80-AA2E-B62CF3D99A4F.JPG',
+  '/carrosel/3B7DF408-D8D3-4294-AB6E-7D68DFBA25BB.JPG',
+  '/carrosel/E4BFD5B5-D817-4CFB-AD9B-D058E90F164F.JPG'
 ];
 
 export const ClinicGallery = () => {
