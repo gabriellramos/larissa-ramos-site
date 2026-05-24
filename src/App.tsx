@@ -13,7 +13,7 @@ import { AIAssistantFloat } from './components/ui/AIAssistantFloat';
 
 function App() {
   return (
-    <div className="min-h-[100dvh] bg-surface">
+    <div className="min-h-[100dvh] bg-surface overflow-x-hidden">
       <Navbar />
       
       <main className="relative">

@@ -17,7 +17,7 @@
 
 @layer base {
   body {
-    @apply bg-surface text-surface-text font-body antialiased selection:bg-primary-container selection:text-primary;
+    @apply bg-surface text-surface-text font-body antialiased selection:bg-primary-container selection:text-primary overflow-x-hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
