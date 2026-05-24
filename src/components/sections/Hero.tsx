@@ -11,6 +11,16 @@ export const Hero = () => {
 
   return (
     <Section id="home" className="relative min-h-[100dvh] lg:min-h-[110vh] flex items-center pt-32 pb-40 overflow-clip bg-gradient-to-br from-[#0a1514] via-[#102422] to-[#0a1514]">
+      {/* Mobile background image */}
+      <div className="absolute inset-0 lg:hidden -z-20">
+        <img 
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" 
+          alt="Fisioterapia Background" 
+          className="w-full h-full object-cover opacity-20 mix-blend-luminosity"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514] via-[#0a1514]/80 to-[#0a1514]/20" />
+      </div>
+
       {/* Decorative background blur / Glowing orbs */}
       <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-[#3B9B88]/20 rounded-full blur-[120px] -z-10" />
       <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-[#225A4E]/30 rounded-full blur-[100px] -z-10" />
@@ -57,6 +67,24 @@ export const Hero = () => {
                 {t('hero.cta_secondary')}
               </Button>
             </div>
+
+            {/* Mobile HUD */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="lg:hidden mt-8 w-full bg-white/5 backdrop-blur-xl p-5 rounded-3xl border border-white/10 shadow-xl"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#2B6D5E]/50 flex items-center justify-center text-[#6BE5C8]">
+                  <Activity className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="font-bold font-sans text-white text-lg">{t('hero.hud_title')}</p>
+                  <p className="text-sm text-white/70">{t('hero.hud_subtitle')}</p>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
@@ -64,7 +92,7 @@ export const Hero = () => {
             animate={{ opacity: 1, scale: 1, rotateX: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             style={{ perspective: '1000px' }}
-            className="relative lg:h-[700px] flex items-center justify-center"
+            className="hidden lg:flex relative h-[700px] items-center justify-center"
           >
             <div className="relative w-full max-w-[500px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] border border-white/10 bg-[#0A1A18]">
               <img 
