@@ -11,14 +11,14 @@ export const Hero = () => {
 
   return (
     <Section id="home" className="relative min-h-[100dvh] lg:min-h-[110vh] flex items-center pt-32 pb-40 overflow-clip bg-gradient-to-br from-[#0a1514] via-[#102422] to-[#0a1514]">
-      {/* Mobile background image */}
-      <div className="absolute inset-0 lg:hidden z-0">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
         <img 
           src="/hero-bg.JPG" 
           alt="Fisioterapia Background" 
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514] via-[#0a1514]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0a1514] via-[#0a1514]/80 lg:via-[#0a1514]/50 to-transparent" />
       </div>
 
       {/* Decorative background blur / Glowing orbs */}
@@ -88,33 +88,20 @@ export const Hero = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, rotateX: 10 }}
-            animate={{ opacity: 1, scale: 1, rotateX: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            style={{ perspective: '1000px' }}
-            className="hidden lg:flex relative h-[700px] items-center justify-center"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="hidden lg:flex relative h-[600px] flex-col items-end justify-end pb-12"
           >
-            <div className="relative w-full max-w-[500px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] border border-white/10 bg-[#0A1A18]">
-              <img 
-                src="/hero-bg.JPG" 
-                alt="Fisioterapia" 
-                className="w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050D0C] via-transparent to-transparent opacity-90" />
-              
-              {/* HUD / Tech overlay decoration */}
-              <div className="absolute top-1/4 right-8 w-2 h-2 rounded-full bg-[#6BE5C8] shadow-[0_0_15px_#6BE5C8] animate-pulse" />
-              <div className="absolute bottom-1/3 left-12 w-2 h-2 rounded-full bg-[#6BE5C8] shadow-[0_0_15px_#6BE5C8] animate-pulse delay-300" />
-              
-              <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-white/20 transform hover:-translate-y-2 transition-transform duration-300">
-                <div className="flex items-center gap-4 mb-2">
-                  <div className="w-10 h-10 rounded-full bg-[#2B6D5E]/50 flex items-center justify-center text-[#6BE5C8]">
-                    <Activity className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="font-bold font-sans text-white text-lg">{t('hero.hud_title')}</p>
-                    <p className="text-sm text-white/70">{t('hero.hud_subtitle')}</p>
-                  </div>
+            {/* Desktop HUD */}
+            <div className="bg-[#0A1A18]/60 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-white/10 hover:-translate-y-2 transition-transform duration-300">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#2B6D5E]/50 flex items-center justify-center text-[#6BE5C8]">
+                  <Activity className="w-6 h-6" />
+                </div>
+                <div>
+                  <p className="font-bold font-sans text-white text-lg">{t('hero.hud_title')}</p>
+                  <p className="text-sm text-white/70">{t('hero.hud_subtitle')}</p>
                 </div>
               </div>
             </div>
