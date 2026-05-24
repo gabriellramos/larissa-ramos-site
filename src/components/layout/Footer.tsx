@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/logo-1.webp" 
+              src="/alt-site.webp" 
               alt="Dra. Larissa Ramos" 
               className="h-10 md:h-12 w-auto object-contain brightness-0 invert mb-6"
             />

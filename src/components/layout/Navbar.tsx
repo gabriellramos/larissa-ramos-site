@@ -40,7 +40,7 @@ export const Navbar = () => {
       <div className="px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center transition-transform hover:scale-[1.02] duration-300">
           <img 
-            src="/logo-1.webp" 
+            src="/alt-site.webp" 
             alt="Dra. Larissa Ramos" 
             className={`h-9 md:h-12 w-auto object-contain transition-all duration-300 ease-in-out ${
               isScrolled ? 'brightness-100' : 'brightness-0 invert'
