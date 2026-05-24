@@ -42,16 +42,16 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-6 w-full sm:w-auto">
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto text-lg bg-gradient-to-r from-[#2B6D5E] to-[#1E4D42] text-white border border-[#439C86]/50 shadow-[0_0_30px_rgba(43,109,94,0.4)] hover:shadow-[0_0_40px_rgba(43,109,94,0.6)] hover:-translate-y-1 transition-all duration-300 rounded-full" 
+                className="w-full sm:w-auto whitespace-nowrap text-lg bg-gradient-to-r from-[#2B6D5E] to-[#1E4D42] text-white border border-[#439C86]/50 shadow-[0_0_30px_rgba(43,109,94,0.4)] hover:shadow-[0_0_40px_rgba(43,109,94,0.6)] hover:-translate-y-1 transition-all duration-300 rounded-full" 
                 onClick={() => window.open('https://wa.me/5548991033490', '_blank')}
               >
                 {t('hero.cta_primary')}
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 shrink-0 w-5 h-5" />
               </Button>
               <Button 
                 variant="glass" 
                 size="lg" 
-                className="w-full sm:w-auto text-lg text-white border-white/20 hover:bg-white/10 rounded-full" 
+                className="w-full sm:w-auto whitespace-nowrap text-lg text-white border-white/20 hover:bg-white/10 rounded-full" 
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 {t('hero.cta_secondary')}
