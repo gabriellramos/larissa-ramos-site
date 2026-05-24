@@ -10,8 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
     
     <title>Dra. Larissa Ramos - Fisioterapia Especializada</title>
-    <!-- Elfsight Google Reviews -->
-    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <!-- Elfsight Google Reviews (Deferred to improve performance) -->
+    <script>
+      (function() {
+        var loaded = false;
+        function loadElfsight() {
+          if (loaded) return;
+          loaded = true;
+          var script = document.createElement('script');
+          script.src = 'https://elfsightcdn.com/platform.js';
+          script.async = true;
+          document.head.appendChild(script);
+        }
+        window.addEventListener('scroll', loadElfsight, { passive: true, once: true });
+        window.addEventListener('mousemove', loadElfsight, { passive: true, once: true });
+        window.addEventListener('touchstart', loadElfsight, { passive: true, once: true });
+        setTimeout(loadElfsight, 3000); // Fallback load after 3s
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

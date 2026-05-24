@@ -40,7 +40,7 @@ export const Navbar = () => {
       <div className="px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center transition-transform hover:scale-[1.02] duration-300">
           <img 
-            src="/logo-1.png" 
+            src="/logo-1.webp" 
             alt="Dra. Larissa Ramos" 
             className={`h-9 md:h-12 w-auto object-contain transition-all duration-300 ease-in-out ${
               isScrolled ? 'brightness-100' : 'brightness-0 invert'
@@ -87,7 +87,7 @@ export const Navbar = () => {
               variant={isScrolled ? 'primary' : 'glass'} 
               size="sm" 
               className={isScrolled ? '' : 'bg-white/20 hover:bg-white/30 text-white border-white/30'}
-              onClick={() => window.open('https://wa.me/5548991033490', '_blank')}
+              onClick={() => window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank')}
             >
               {t('nav.book')}
             </Button>
@@ -121,7 +121,7 @@ export const Navbar = () => {
             <button onClick={() => changeLanguage('en')} className={`text-sm font-bold ${i18n.language === 'en' ? 'text-primary-container' : 'text-white/60'}`}>EN</button>
             <button onClick={() => changeLanguage('es')} className={`text-sm font-bold ${i18n.language === 'es' ? 'text-primary-container' : 'text-white/60'}`}>ES</button>
           </div>
-          <Button variant="primary" className="w-full mt-2" onClick={() => window.open('https://wa.me/5548991033490', '_blank')}>
+          <Button variant="primary" className="w-full mt-2" onClick={() => window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank')}>
             {t('nav.book')}
           </Button>
         </div>

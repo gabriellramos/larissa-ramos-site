@@ -3,7 +3,7 @@
 export const WhatsAppFloat = () => {
   return (
     <a
-      href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta."
+      href="https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#25D366]/50 animate-bounce"

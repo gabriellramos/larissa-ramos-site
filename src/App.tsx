@@ -9,7 +9,7 @@ import { Testimonials } from './components/sections/Testimonials';
 import { Contact } from './components/sections/Contact';
 import { ClinicGallery } from './components/sections/ClinicGallery';
 import { WhatsAppFloat } from './components/ui/WhatsAppFloat';
-import { AIAssistantFloat } from './components/ui/AIAssistantFloat';
+
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
       
       <Footer />
       <WhatsAppFloat />
-      <AIAssistantFloat />
+
     </div>
   );
 }

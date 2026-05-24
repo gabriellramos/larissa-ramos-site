@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+
 import { Container } from '../layout/Container';
 import { Section } from '../layout/Section';
 import { Button } from '../ui/Button';
@@ -14,9 +14,11 @@ export const Hero = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero-bg.JPG" 
+          src="/hero-bg.webp" 
           alt="Fisioterapia Background" 
           className="w-full h-full object-cover object-right lg:object-center opacity-50"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0a1514] via-[#0a1514]/80 lg:via-[#0a1514]/50 to-transparent" />
       </div>
@@ -30,12 +32,7 @@ export const Hero = () => {
 
       <Container>
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col items-start gap-6"
-          >
+          <div className="flex flex-col items-start gap-6 animate-[fadeInUp_0.8s_ease-out_forwards]">
             <Badge variant="glass" className="mb-2 bg-white/5 border-white/10 text-white/90 backdrop-blur-md">
               <Star className="w-3 h-3 mr-2 text-[#6BE5C8] fill-[#6BE5C8]" />
               {t('hero.badge')}
@@ -53,7 +50,7 @@ export const Hero = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto whitespace-nowrap text-lg bg-gradient-to-r from-[#2B6D5E] to-[#1E4D42] text-white border border-[#439C86]/50 shadow-[0_0_30px_rgba(43,109,94,0.4)] hover:shadow-[0_0_40px_rgba(43,109,94,0.6)] hover:-translate-y-1 transition-all duration-300 rounded-full" 
-                onClick={() => window.open('https://wa.me/5548991033490', '_blank')}
+                onClick={() => window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank')}
               >
                 {t('hero.cta_primary')}
                 <ArrowRight className="ml-2 shrink-0 w-5 h-5" />
@@ -69,12 +66,7 @@ export const Hero = () => {
             </div>
 
             {/* Mobile HUD */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="lg:hidden mt-8 w-full bg-white/5 backdrop-blur-xl p-5 rounded-3xl border border-white/10 shadow-xl"
-            >
+            <div className="lg:hidden mt-8 w-full bg-white/5 backdrop-blur-xl p-5 rounded-3xl border border-white/10 shadow-xl animate-[fadeInUp_1s_ease-out_forwards]">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-[#2B6D5E]/50 flex items-center justify-center text-[#6BE5C8]">
                   <Activity className="w-5 h-5" />
@@ -84,15 +76,10 @@ export const Hero = () => {
                   <p className="text-sm text-white/70">{t('hero.hud_subtitle')}</p>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="hidden lg:flex relative h-[600px] flex-col items-end justify-end pb-12"
-          >
+          <div className="hidden lg:flex relative h-[600px] flex-col items-end justify-end pb-12 animate-[fadeInUp_1.2s_ease-out_forwards]">
             {/* Desktop HUD */}
             <div className="bg-[#0A1A18]/60 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-white/10 hover:-translate-y-2 transition-transform duration-300">
               <div className="flex items-center gap-4">
@@ -105,7 +92,7 @@ export const Hero = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </Section>

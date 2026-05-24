@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/logo-1.png" 
+              src="/logo-1.webp" 
               alt="Dra. Larissa Ramos" 
               className="h-10 md:h-12 w-auto object-contain brightness-0 invert mb-6"
             />
@@ -61,7 +61,17 @@ export const Footer = () => {
 
         <div className="border-t border-surface-text-variant/50 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-surface-container/50 gap-4">
           <p>© {new Date().getFullYear()} Dra. Larissa Ramos. {t('footer.rights')}</p>
-          <p>Made with ❤️ by AI.</p>
+          <p>
+            Desenvolvido por{' '}
+            <a 
+              href="https://wa.me/5592993728956?text=Oi%2C%20vi%20seu%20trabalho%20desenvolvendo%20sites%20de%20empresas%20e%20gostaria%20de%20conversar" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary-container transition-colors opacity-70 hover:opacity-100"
+            >
+              Gabriel Nascimento
+            </a>
+          </p>
         </div>
       </Container>
     </footer>
