@@ -16,9 +16,9 @@ export const Hero = () => {
         <img 
           src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" 
           alt="Fisioterapia Background" 
-          className="w-full h-full object-cover opacity-20 mix-blend-luminosity"
+          className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514] via-[#0a1514]/80 to-[#0a1514]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514] via-[#0a1514]/80 to-transparent" />
       </div>
 
       {/* Decorative background blur / Glowing orbs */}
