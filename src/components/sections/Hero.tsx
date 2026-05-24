@@ -14,7 +14,7 @@ export const Hero = () => {
       {/* Mobile background image */}
       <div className="absolute inset-0 lg:hidden z-0">
         <img 
-          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" 
+          src="/hero-bg.JPG" 
           alt="Fisioterapia Background" 
           className="w-full h-full object-cover opacity-40"
         />
@@ -96,7 +96,7 @@ export const Hero = () => {
           >
             <div className="relative w-full max-w-[500px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] border border-white/10 bg-[#0A1A18]">
               <img 
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" 
+                src="/hero-bg.JPG" 
                 alt="Fisioterapia" 
                 className="w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               />
