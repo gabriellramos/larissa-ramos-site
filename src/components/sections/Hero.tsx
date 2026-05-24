@@ -12,7 +12,7 @@ export const Hero = () => {
   return (
     <Section id="home" className="relative min-h-[100dvh] lg:min-h-[110vh] flex items-center pt-32 pb-40 overflow-clip bg-gradient-to-br from-[#0a1514] via-[#102422] to-[#0a1514]">
       {/* Mobile background image */}
-      <div className="absolute inset-0 lg:hidden -z-20">
+      <div className="absolute inset-0 lg:hidden z-0">
         <img 
           src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" 
           alt="Fisioterapia Background" 
@@ -22,14 +22,14 @@ export const Hero = () => {
       </div>
 
       {/* Decorative background blur / Glowing orbs */}
-      <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-[#3B9B88]/20 rounded-full blur-[120px] -z-10" />
-      <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-[#225A4E]/30 rounded-full blur-[100px] -z-10" />
+      <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-[#3B9B88]/20 rounded-full blur-[120px] z-0 pointer-events-none" />
+      <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-[#225A4E]/30 rounded-full blur-[100px] z-0 pointer-events-none" />
       
       {/* Subtle Grid Pattern Overlay */}
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none -z-10" />
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none z-0" />
 
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center z-10">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
