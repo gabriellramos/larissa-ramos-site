@@ -75,7 +75,10 @@
   "testimonials": {
     "badge": "Testimonials",
     "title": "What our patients say",
-    "subtitle": "Based on 50+ Google reviews"
+    "subtitle": "Based on 50+ Google reviews",
+    "loading": "Loading testimonials...",
+    "error_message": "Unable to load testimonials at this time. Please check your connection or try again.",
+    "retry_button": "Try Again"
   },
   "contact": {
     "badge": "Contact",

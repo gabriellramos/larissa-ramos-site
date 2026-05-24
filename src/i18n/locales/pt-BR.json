@@ -75,7 +75,10 @@
   "testimonials": {
     "badge": "Depoimentos",
     "title": "O que dizem nossos pacientes",
-    "subtitle": "Baseado em +50 avaliações no Google"
+    "subtitle": "Baseado em +50 avaliações no Google",
+    "loading": "Carregando depoimentos...",
+    "error_message": "Não foi possível carregar os depoimentos no momento. Por favor, verifique sua conexão ou tente novamente.",
+    "retry_button": "Tentar Novamente"
   },
   "contact": {
     "badge": "Contato",

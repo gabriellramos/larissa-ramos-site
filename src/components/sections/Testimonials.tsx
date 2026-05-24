@@ -97,7 +97,7 @@ export const Testimonials = () => {
           {isLoading && (
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10 animate-in fade-in duration-500">
               <Loader2 className="w-10 h-10 text-primary animate-spin" />
-              <p className="text-surface-text-variant font-medium text-sm">Carregando depoimentos...</p>
+              <p className="text-surface-text-variant font-medium text-sm">{t('testimonials.loading')}</p>
             </div>
           )}
 
@@ -105,11 +105,11 @@ export const Testimonials = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10 bg-surface-text/50 backdrop-blur-sm rounded-3xl border border-white/10 p-6 animate-in fade-in duration-500">
               <AlertCircle className="w-12 h-12 text-red-400" />
               <p className="text-white text-center max-w-md font-medium">
-                Não foi possível carregar os depoimentos no momento. Por favor, verifique sua conexão ou tente novamente.
+                {t('testimonials.error_message')}
               </p>
               <Button onClick={handleRetry} variant="primary" className="mt-2 flex items-center gap-2">
                 <RefreshCw className="w-4 h-4" />
-                Tentar Novamente
+                {t('testimonials.retry_button')}
               </Button>
             </div>
           )}
