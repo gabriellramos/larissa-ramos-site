@@ -24,11 +24,11 @@
   },
   "about": {
     "badge": "About Me",
-    "title": "Unlock the transformative potential of Specialized Physiotherapy and personalized Pilates.",
+    "title": "Unlock the transformative potential of Specialized Physiotherapy.",
     "intro": "My name is Dra. Larissa Ramos, a physiotherapist graduated from UNINORTE - Manaus (CREFITO 10/279910-F), and for over {{years}} years I have dedicated my professional career to transforming lives through specialized rehabilitation.",
     "mission": "My mission is to guide you in overcoming physical limitations and achieving a pain-free life. Based on a precise diagnosis and individualized care, I structure treatments focused on real and lasting results.",
-    "pilates": "Beyond clinical physiotherapy, I integrate Clinical and Functional Pilates as a key tool for active rehabilitation, promoting targeted muscle strengthening, flexibility, and restoring body balance.",
     "conclusion": "If you're looking for a dedicated, experienced physiotherapist passionate about helping people, schedule your consultation today!",
+    "years_specialization": "Years of Specialization",
     "bullets": {
       "0": "Specialist in Spine & Orthopedics",
       "1": "Surgical follow-up with renowned medical teams",
@@ -60,17 +60,13 @@
       "manual_therapy": {
         "title": "Manual & Myofascial Therapy",
         "desc": "Trigger point release, tension relief, and improvement in joint mobility and muscle flexibility."
-      },
-      "pilates": {
-        "title": "Clinical Pilates",
-        "desc": "Targeted exercises for rehabilitation, muscle strengthening, flexibility, and body balance, guided by an integrated team."
       }
     }
   },
   "gallery": {
     "badge": "Our Clinic",
     "title": "Discover Our Space",
-    "subtitle": "A modern, welcoming environment equipped with the best tools for your recovery and Pilates practice."
+    "subtitle": "A modern, welcoming environment equipped with the best tools for your recovery."
   },
   "testimonials": {
     "badge": "Testimonials",
@@ -83,7 +79,7 @@
   "contact": {
     "badge": "Contact",
     "title": "Schedule your Assessment",
-    "subtitle": "Take the first step towards a pain-free life. Contact us and schedule your Physiotherapy or Pilates session.",
+    "subtitle": "Take the first step towards a pain-free life. Contact us and schedule your Physiotherapy session.",
     "info_title": "Contact Information",
     "address": "Address",
     "address_val": "Rod. Tertuliano Brito Xavier, 210 - Room 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
@@ -101,7 +97,7 @@
     "form_success": "Message sent successfully! We will contact you soon."
   },
   "footer": {
-    "description": "Specialized physiotherapy and clinical Pilates focused on chronic pain relief and well-being promotion. Our patient-centered approach aims at physical recovery and quality of life improvement.",
+    "description": "Specialized physiotherapy focused on chronic pain relief and well-being promotion. Our patient-centered approach aims at physical recovery and quality of life improvement.",
     "quick_links": "Quick Links",
     "contact": "Contact",
     "rights": "All rights reserved to Larissa Ramos."

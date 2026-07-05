@@ -24,11 +24,11 @@
   },
   "about": {
     "badge": "Sobre Mí",
-    "title": "Descubre el potencial transformador de la Fisioterapia Especializada y el Pilates personalizado.",
+    "title": "Descubre el potencial transformador de la Fisioterapia Especializada.",
     "intro": "Mi nombre es Dra. Larissa Ramos, fisioterapeuta graduada de la UNINORTE - Manaus (CREFITO 10/279910-F), y durante más de {{years}} años he dedicado mi trayectoria profesional a transformar vidas a través de la rehabilitación especializada.",
     "mission": "Mi misión es guiarte para superar las limitaciones físicas y lograr una vida libre de dolor. Con base en un diagnóstico preciso y una atención individualizada, estructuro tratamientos enfocados en resultados reales y duraderos.",
-    "pilates": "Además de la fisioterapia clínica, integro el Pilates Clínico y Funcional como una herramienta fundamental para la rehabilitación activa, promoviendo el fortalecimiento muscular dirigido, la flexibilidad y la restauración del equilibrio corporal.",
     "conclusion": "Si buscas una fisioterapeuta dedicada, experimentada y apasionada por ayudar a las personas, ¡programa tu consulta hoy mismo!",
+    "years_specialization": "Años de Especialización",
     "bullets": {
       "0": "Especialista en Columna y Ortopedia",
       "1": "Seguimiento quirúrgico con equipos médicos de renombre",
@@ -60,17 +60,13 @@
       "manual_therapy": {
         "title": "Terapia Manual y Miofascial",
         "desc": "Liberación de puntos gatillo, alivio de tensión y mejora de la movilidad articular y flexibilidad muscular."
-      },
-      "pilates": {
-        "title": "Pilates Clínico",
-        "desc": "Ejercicios dirigidos a la rehabilitación, fortalecimiento muscular, flexibilidad y equilibrio corporal, guiados por un equipo integrado."
       }
     }
   },
   "gallery": {
     "badge": "Nuestra Clínica",
     "title": "Conoce Nuestro Espacio",
-    "subtitle": "Un ambiente moderno, acogedor y equipado con las mejores herramientas para tu recuperación y práctica de Pilates."
+    "subtitle": "Un ambiente moderno, acogedor y equipado con las mejores herramientas para tu recuperación."
   },
   "testimonials": {
     "badge": "Testimonios",
@@ -83,7 +79,7 @@
   "contact": {
     "badge": "Contacto",
     "title": "Agenda tu Evaluación",
-    "subtitle": "Da el primer paso hacia una vida sin dolor. Contáctanos y agenda tu sesión de Fisioterapia o Pilates.",
+    "subtitle": "Da el primer paso hacia una vida sin dolor. Contáctanos y agenda tu sesión de Fisioterapia.",
     "info_title": "Información de Contacto",
     "address": "Dirección",
     "address_val": "Rod. Tertuliano Brito Xavier, 210 - Sala 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
@@ -101,7 +97,7 @@
     "form_success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto."
   },
   "footer": {
-    "description": "Fisioterapia especializada y Pilates clínico enfocado en el alivio del dolor crónico y la promoción del bienestar. Nuestro enfoque centrado en el paciente tiene como objetivo la recuperación física y la mejora de la calidad de vida.",
+    "description": "Fisioterapia especializada enfocada en el alivio del dolor crónico y la promoción del bienestar. Nuestro enfoque centrado en el paciente tiene como objetivo la recuperación física y la mejora de la calidad de vida.",
     "quick_links": "Enlaces Rápidos",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados para Larissa Ramos."
