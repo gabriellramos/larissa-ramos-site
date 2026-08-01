@@ -20,7 +20,7 @@
     "react-dom": "^19.2.6",
     "react-hook-form": "^7.76.1",
     "react-i18next": "^17.0.8",
-    "react-router-dom": "^7.15.1",
+    "react-router-dom": "^7.11.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "postcss": "^8.5.15",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.3.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",

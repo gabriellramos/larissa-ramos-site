@@ -4,7 +4,7 @@ import { Container } from '../layout/Container';
 import { Section } from '../layout/Section';
 import { Card } from '../ui/Card';
 import { Badge } from '../ui/Badge';
-import { Activity, ShieldPlus, Dumbbell, Brain, Hand } from 'lucide-react';
+import { Activity, ShieldPlus, Dumbbell, Brain, Hand, Home } from 'lucide-react';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 export const Services = () => {
@@ -35,6 +35,11 @@ export const Services = () => {
       icon: <Hand className="w-8 h-8 text-primary" />,
       title: t('services.items.manual_therapy.title'),
       desc: t('services.items.manual_therapy.desc')
+    },
+    {
+      icon: <Home className="w-8 h-8 text-primary" />,
+      title: t('services.items.home_care.title'),
+      desc: t('services.items.home_care.desc')
     }
   ];
 

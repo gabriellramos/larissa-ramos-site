@@ -60,6 +60,10 @@
       "manual_therapy": {
         "title": "Terapia Manual",
         "desc": "Liberação de pontos de gatilho, alívio de tensões e melhora na mobilidade articular e flexibilidade muscular."
+      },
+      "home_care": {
+        "title": "Atendimento Domiciliar (Home Care)",
+        "desc": "Conforto e comodidade com atendimento especializado no conforto da sua casa, garantindo a mesma qualidade clínica. Atendimento restrito a Canasvieiras e região Norte da Ilha de Florianópolis."
       }
     }
   },

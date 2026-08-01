@@ -60,6 +60,10 @@
       "manual_therapy": {
         "title": "Manual & Myofascial Therapy",
         "desc": "Trigger point release, tension relief, and improvement in joint mobility and muscle flexibility."
+      },
+      "home_care": {
+        "title": "Home Care",
+        "desc": "Comfort and convenience with specialized care in the comfort of your home, ensuring the same clinical quality. Services restricted to Canasvieiras and the Northern region of Florianópolis Island."
       }
     }
   },

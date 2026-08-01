@@ -60,6 +60,10 @@
       "manual_therapy": {
         "title": "Terapia Manual y Miofascial",
         "desc": "Liberación de puntos gatillo, alivio de tensión y mejora de la movilidad articular y flexibilidad muscular."
+      },
+      "home_care": {
+        "title": "Atención a Domicilio (Home Care)",
+        "desc": "Comodidad y conveniencia con atención especializada en la comodidad de su hogar, garantizando la misma calidad clínica. Servicios restringidos a Canasvieiras y la región Norte de la Isla de Florianópolis."
       }
     }
   },
