@@ -9,7 +9,8 @@ import { Testimonials } from './components/sections/Testimonials';
 import { Contact } from './components/sections/Contact';
 import { ClinicGallery } from './components/sections/ClinicGallery';
 import { WhatsAppFloat } from './components/ui/WhatsAppFloat';
-
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       
       <Footer />
       <WhatsAppFloat />
-
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
