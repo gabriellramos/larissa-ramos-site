@@ -5,6 +5,7 @@ import { Section } from '../layout/Section';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 import { ArrowRight, Star, Activity } from 'lucide-react';
+import { trackWhatsAppClick } from '../../utils/analytics';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -50,7 +51,10 @@ export const Hero = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto whitespace-nowrap text-lg bg-gradient-to-r from-[#2B6D5E] to-[#1E4D42] text-white border border-[#439C86]/50 shadow-[0_0_30px_rgba(43,109,94,0.4)] hover:shadow-[0_0_40px_rgba(43,109,94,0.6)] hover:-translate-y-1 transition-all duration-300 rounded-full" 
-                onClick={() => window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank')}
+                onClick={() => {
+                  trackWhatsAppClick('hero_cta');
+                  window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank');
+                }}
               >
                 {t('hero.cta_primary')}
                 <ArrowRight className="ml-2 shrink-0 w-5 h-5" />

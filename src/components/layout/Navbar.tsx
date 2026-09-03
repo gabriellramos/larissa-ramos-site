@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { trackWhatsAppClick } from '../../utils/analytics';
 
 export const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -87,7 +88,10 @@ export const Navbar = () => {
               variant={isScrolled ? 'primary' : 'glass'} 
               size="sm" 
               className={isScrolled ? '' : 'bg-white/20 hover:bg-white/30 text-white border-white/30'}
-              onClick={() => window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank')}
+              onClick={() => {
+                trackWhatsAppClick('navbar_cta_desktop');
+                window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank');
+              }}
             >
               {t('nav.book')}
             </Button>
@@ -121,7 +125,14 @@ export const Navbar = () => {
             <button onClick={() => changeLanguage('en')} className={`text-sm font-bold ${i18n.language === 'en' ? 'text-primary-container' : 'text-white/60'}`}>EN</button>
             <button onClick={() => changeLanguage('es')} className={`text-sm font-bold ${i18n.language === 'es' ? 'text-primary-container' : 'text-white/60'}`}>ES</button>
           </div>
-          <Button variant="primary" className="w-full mt-2" onClick={() => window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank')}>
+          <Button 
+            variant="primary" 
+            className="w-full mt-2" 
+            onClick={() => {
+              trackWhatsAppClick('navbar_cta_mobile');
+              window.open('https://wa.me/5548991033490?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.', '_blank');
+            }}
+          >
             {t('nav.book')}
           </Button>
         </div>

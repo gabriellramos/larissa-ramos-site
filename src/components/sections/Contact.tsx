@@ -11,6 +11,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { ScrollReveal } from '../ui/ScrollReveal';
+import { trackFormSubmit } from '../../utils/analytics';
 
 const contactSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -36,6 +37,9 @@ export const Contact = () => {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     
+    // Disparo da conversão do Google Ads e evento no GA4
+    trackFormSubmit({ name: data.name });
+
     const phoneNumber = "5548991033490";
     const text = `Olá! Vim pelo site e gostaria de falar com a clínica.\n\n*Nome:* ${data.name}\n*Telefone:* ${data.phone}\n\n*Mensagem:*\n${data.message}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
