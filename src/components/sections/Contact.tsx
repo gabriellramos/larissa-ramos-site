@@ -6,12 +6,12 @@ import { Badge } from '../ui/Badge';
 import { Input, Textarea } from '../ui/Input';
 import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Home, Sparkles, MessageCircle } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { ScrollReveal } from '../ui/ScrollReveal';
-import { trackFormSubmit } from '../../utils/analytics';
+import { trackFormSubmit, trackWhatsAppClick } from '../../utils/analytics';
 
 const contactSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -41,7 +41,7 @@ export const Contact = () => {
     trackFormSubmit({ name: data.name });
 
     const phoneNumber = "5548991033490";
-    const text = `Olá! Vim pelo site e gostaria de falar com a clínica.\n\n*Nome:* ${data.name}\n*Telefone:* ${data.phone}\n\n*Mensagem:*\n${data.message}`;
+    const text = `Olá! Vim pelo site e gostaria de agendar uma consulta com a Dra. Larissa Ramos.\n\n*Nome:* ${data.name}\n*Telefone:* ${data.phone}\n\n*Mensagem:*\n${data.message}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     
     window.open(whatsappUrl, '_blank');
@@ -69,59 +69,89 @@ export const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="flex flex-col gap-8">
-            <Card className="p-8 h-full">
-              <h3 className="text-2xl font-bold font-sans mb-8 text-surface-text">{t('contact.info_title')}</h3>
-              <ul className="flex flex-col gap-8">
-                <li className="flex items-start gap-4">
-                  <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
-                    <MapPin className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-surface-text mb-1">{t('contact.address')}</h4>
-                    <p className="text-surface-text-variant leading-relaxed" dangerouslySetInnerHTML={{ __html: t('contact.address_val') }} />
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
-                    <Phone className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-surface-text mb-1">{t('contact.phone')}</h4>
-                    <p className="text-surface-text-variant">(48) 99103-3490</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
-                    <Mail className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-surface-text mb-1">{t('contact.email')}</h4>
-                    <p className="text-surface-text-variant">contato@larissaramos.com.br</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
-                    <Clock className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-surface-text mb-1">{t('contact.hours')}</h4>
-                    <p className="text-surface-text-variant leading-relaxed">{t('contact.hours_val')}</p>
-                  </div>
-                </li>
-              </ul>
+            <Card className="p-8 h-full flex flex-col justify-between">
+              <div>
+                <h3 className="text-2xl font-bold font-sans mb-8 text-surface-text">{t('contact.info_title')}</h3>
+                <ul className="flex flex-col gap-6">
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
+                      <MapPin className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-surface-text mb-1">{t('contact.address')}</h4>
+                      <div className="text-surface-text-variant leading-relaxed text-sm sm:text-base" dangerouslySetInnerHTML={{ __html: t('contact.address_val') }} />
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
+                      <Phone className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-surface-text mb-1">{t('contact.phone')}</h4>
+                      <a href="tel:5548991033490" className="text-surface-text-variant hover:text-primary transition-colors font-medium">
+                        (48) 99103-3490
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
+                      <Mail className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-surface-text mb-1">{t('contact.email')}</h4>
+                      <a href="mailto:contato@larissaramos.com.br" className="text-surface-text-variant hover:text-primary transition-colors">
+                        contato@larissaramos.com.br
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary-container p-4 rounded-xl text-primary shrink-0">
+                      <Clock className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-surface-text mb-1">{t('contact.hours')}</h4>
+                      <p className="text-surface-text-variant leading-relaxed">{t('contact.hours_val')}</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-              {/* Google Maps Embed */}
-              <div className="mt-8 rounded-xl overflow-hidden shadow-sm h-48 w-full border border-primary/10">
-                <iframe 
-                  src="https://maps.google.com/maps?q=Rod.%20Tertuliano%20Brito%20Xavier,%20210%20-%20Canasvieiras,%20Florian%C3%B3polis%20-%20SC,%2088054-000&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={false} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Google Maps Location"
-                />
+              {/* Home Care & New Location Spotlight Box (Substitui o mapa da antiga sala física) */}
+              <div className="mt-8 rounded-2xl p-6 bg-gradient-to-br from-primary-container/40 via-surface-container/60 to-primary-container/20 border border-primary/20 shadow-sm flex flex-col gap-4">
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-white">
+                    <Sparkles className="w-3.5 h-3.5" />
+                    {t('contact.homecare_card.badge')}
+                  </span>
+                </div>
+                
+                <div>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <Home className="w-5 h-5 text-primary shrink-0" />
+                    <h4 className="font-bold text-surface-text text-lg">
+                      {t('contact.homecare_card.title')}
+                    </h4>
+                  </div>
+                  <p className="text-surface-text-variant text-sm leading-relaxed">
+                    {t('contact.homecare_card.desc')}
+                  </p>
+                </div>
+
+                <div className="pt-2 border-t border-primary/10 flex flex-col gap-3">
+                  <a
+                    href="https://wa.me/5548991033490?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20domiciliar%20e%20regi%C3%B5es%20atendidas."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick('contact_homecare_box')}
+                    className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-semibold text-sm transition-all duration-300 shadow-sm hover:shadow group"
+                  >
+                    <MessageCircle className="w-4 h-4 transition-transform group-hover:scale-110" />
+                    <span>{t('contact.homecare_card.cta')}</span>
+                  </a>
+                  <p className="text-[12px] text-surface-text-variant/80 text-center">
+                    {t('contact.homecare_card.note')}
+                  </p>
+                </div>
               </div>
             </Card>
           </div>

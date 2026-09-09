@@ -62,15 +62,16 @@
         "desc": "Liberação de pontos de gatilho, alívio de tensões e melhora na mobilidade articular e flexibilidade muscular."
       },
       "home_care": {
+        "badge": "Em Destaque",
         "title": "Atendimento Domiciliar (Home Care)",
-        "desc": "Conforto e comodidade com atendimento especializado no conforto da sua casa, garantindo a mesma qualidade clínica. Atendimento restrito a Canasvieiras e região Norte da Ilha de Florianópolis."
+        "desc": "Conforto e comodidade com atendimento especializado no conforto da sua casa, garantindo a mesma excelência clínica. Levamos equipamentos completos e acompanhamento individualizado com atendimento exclusivo no Norte da Ilha de Florianópolis: Jurerê, Canasvieiras, Cachoeira do Bom Jesus, Ponta das Canas, Praia Brava e proximidades."
       }
     }
   },
   "gallery": {
-    "badge": "Nossa Clínica",
-    "title": "Conheça Nosso Espaço",
-    "subtitle": "Um ambiente moderno, acolhedor e preparado com os melhores equipamentos para a sua recuperação."
+    "badge": "Nossa Atuação",
+    "title": "Cuidado & Dedicação em Cada Detalhe",
+    "subtitle": "Atendimento humanizado e especializado com os melhores métodos para a sua máxima recuperação e qualidade de vida."
   },
   "testimonials": {
     "badge": "Depoimentos",
@@ -85,12 +86,19 @@
     "title": "Agende sua Avaliação",
     "subtitle": "Dê o primeiro passo para uma vida sem dor. Entre em contato e agende sua sessão de Fisioterapia.",
     "info_title": "Informações de Contato",
-    "address": "Endereço",
-    "address_val": "Rod. Tertuliano Brito Xavier, 210 - Sala 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
+    "address": "Local de Atendimento",
+    "address_val": "<strong class=\"text-primary block mb-0.5\">Em breve em novo endereço!</strong>Atendimentos presenciais em formato <span class=\"font-semibold text-surface-text\">Domiciliar (Home Care)</span> com atuação no Norte da Ilha de Florianópolis (Jurerê, Canasvieiras, Cachoeira do Bom Jesus e bairros adjacentes).<br/><span class=\"text-xs text-surface-text-variant mt-1.5 block\">Entre em contato para consultar horários e disponibilidade para sua região.</span>",
+    "homecare_card": {
+      "badge": "Em Breve Novo Endereço",
+      "title": "Atendimento Domiciliar Exclusivo",
+      "desc": "Levamos toda a estrutura técnica e equipamentos especializados até você no Norte da Ilha de Florianópolis, com foco nos bairros Jurerê, Canasvieiras, Cachoeira do Bom Jesus e adjacências (Ponta das Canas, Praia Brava e arredores).",
+      "cta": "Falar no WhatsApp para mais detalhes",
+      "note": "Quer consultar disponibilidade para seu bairro ou saber do novo espaço? Estamos à disposição!"
+    },
     "phone": "Telefone / WhatsApp",
     "email": "E-mail",
-    "hours": "Horário de Funcionamento",
-    "hours_val": "Segunda a Sexta: 08:00 às 18:00",
+    "hours": "Horário de Atendimento",
+    "hours_val": "Segunda a Sexta: 08:00 às 18:00 (Sob agendamento)",
     "form_title": "Envie uma Mensagem",
     "form_name": "Nome Completo",
     "form_email": "E-mail",
@@ -104,6 +112,7 @@
     "description": "Fisioterapia especializada focada em alívio de dores crônicas e promoção de bem-estar. Nossa abordagem centrada no paciente visa à recuperação física e melhoria da qualidade de vida.",
     "quick_links": "Links Rápidos",
     "contact": "Contato",
+    "address": "Atendimento Domiciliar • Norte da Ilha (Florianópolis - SC)<br/><span class=\"text-xs text-primary-container font-medium\">Em breve em novo endereço</span>",
     "rights": "Todos os direitos reservados para Larissa Ramos."
   }
 }

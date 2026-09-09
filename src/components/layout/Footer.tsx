@@ -34,29 +34,33 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white">{t('footer.contact')}</h3>
-            <ul className="flex flex-col gap-5 text-surface-container/80">
-              <li className="flex items-start gap-4 hover:text-white transition-colors">
-                <div className="bg-surface-text-variant p-2 rounded-lg text-primary-container shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <span className="leading-relaxed" dangerouslySetInnerHTML={{ __html: t('contact.address_val') }} />
-              </li>
-              <li className="flex items-center gap-4 hover:text-white transition-colors">
-                <div className="bg-surface-text-variant p-2 rounded-lg text-primary-container shrink-0">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <span>(48) 99103-3490</span>
-              </li>
-              <li className="flex items-center gap-4 hover:text-white transition-colors">
-                <div className="bg-surface-text-variant p-2 rounded-lg text-primary-container shrink-0">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <span>contato@larissaramos.com.br</span>
-              </li>
-            </ul>
-          </div>
+              <div>
+                <h3 className="text-lg font-bold mb-6 text-white">{t('footer.contact')}</h3>
+                <ul className="flex flex-col gap-5 text-surface-container/80">
+                  <li className="flex items-start gap-4 hover:text-white transition-colors">
+                    <div className="bg-surface-text-variant p-2 rounded-lg text-primary-container shrink-0">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <span className="leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: t('footer.address') }} />
+                  </li>
+                  <li className="flex items-center gap-4 hover:text-white transition-colors">
+                    <div className="bg-surface-text-variant p-2 rounded-lg text-primary-container shrink-0">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <a href="https://wa.me/5548991033490" target="_blank" rel="noopener noreferrer" className="hover:text-primary-container transition-colors">
+                      (48) 99103-3490
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-4 hover:text-white transition-colors">
+                    <div className="bg-surface-text-variant p-2 rounded-lg text-primary-container shrink-0">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <a href="mailto:contato@larissaramos.com.br" className="hover:text-primary-container transition-colors">
+                      contato@larissaramos.com.br
+                    </a>
+                  </li>
+                </ul>
+              </div>
         </div>
 
         <div className="border-t border-surface-text-variant/50 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-surface-container/50 gap-4">

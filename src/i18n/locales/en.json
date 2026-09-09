@@ -62,15 +62,16 @@
         "desc": "Trigger point release, tension relief, and improvement in joint mobility and muscle flexibility."
       },
       "home_care": {
-        "title": "Home Care",
-        "desc": "Comfort and convenience with specialized care in the comfort of your home, ensuring the same clinical quality. Services restricted to Canasvieiras and the Northern region of Florianópolis Island."
+        "badge": "Featured",
+        "title": "Home Care Physiotherapy",
+        "desc": "Comfort and convenience with specialized care in the comfort of your home, ensuring the same clinical excellence. Complete portable equipment and personalized treatment dedicated to the Northern region of Florianópolis Island: Jurerê, Canasvieiras, Cachoeira do Bom Jesus, Ponta das Canas, Praia Brava, and nearby neighborhoods."
       }
     }
   },
   "gallery": {
-    "badge": "Our Clinic",
-    "title": "Discover Our Space",
-    "subtitle": "A modern, welcoming environment equipped with the best tools for your recovery."
+    "badge": "Our Practice",
+    "title": "Care & Dedication in Every Detail",
+    "subtitle": "Humanized and specialized treatment with modern methods and dedicated follow-up for your full recovery and quality of life."
   },
   "testimonials": {
     "badge": "Testimonials",
@@ -85,12 +86,19 @@
     "title": "Schedule your Assessment",
     "subtitle": "Take the first step towards a pain-free life. Contact us and schedule your Physiotherapy session.",
     "info_title": "Contact Information",
-    "address": "Address",
-    "address_val": "Rod. Tertuliano Brito Xavier, 210 - Room 05<br/>Canasvieiras, Florianópolis - SC, 88054-000",
+    "address": "Care & Location",
+    "address_val": "<strong class=\"text-primary block mb-0.5\">Coming soon to a new location!</strong>In-person sessions currently provided via <span class=\"font-semibold text-surface-text\">Home Care</span> dedicated to the Northern region of Florianópolis Island (Jurerê, Canasvieiras, Cachoeira do Bom Jesus, and adjacent areas).<br/><span class=\"text-xs text-surface-text-variant mt-1.5 block\">Get in touch to check schedule and availability for your neighborhood.</span>",
+    "homecare_card": {
+      "badge": "New Location Soon",
+      "title": "Exclusive Home Care",
+      "desc": "We bring full clinical equipment and dedicated physiotherapy expertise straight to your home in the Northern region of Florianópolis Island, focusing on Jurerê, Canasvieiras, Cachoeira do Bom Jesus, Ponta das Canas, Praia Brava, and surrounding areas.",
+      "cta": "Chat on WhatsApp for more details",
+      "note": "Want to check availability for your neighborhood or learn about our upcoming space? Contact us anytime!"
+    },
     "phone": "Phone / WhatsApp",
     "email": "E-mail",
     "hours": "Working Hours",
-    "hours_val": "Monday to Friday: 08:00 AM to 06:00 PM",
+    "hours_val": "Monday to Friday: 08:00 AM to 06:00 PM (By appointment)",
     "form_title": "Send a Message",
     "form_name": "Full Name",
     "form_email": "E-mail",
@@ -104,6 +112,7 @@
     "description": "Specialized physiotherapy focused on chronic pain relief and well-being promotion. Our patient-centered approach aims at physical recovery and quality of life improvement.",
     "quick_links": "Quick Links",
     "contact": "Contact",
+    "address": "Home Care • North Island (Florianópolis - SC)<br/><span class=\"text-xs text-primary-container font-medium\">Coming soon to a new location</span>",
     "rights": "All rights reserved to Larissa Ramos."
   }
 }

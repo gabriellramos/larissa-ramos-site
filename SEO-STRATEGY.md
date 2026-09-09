@@ -12,7 +12,7 @@
 ### 1.1 Identidade e Posicionamento
 - **Especialista:** Dra. Larissa Ramos
 - **Especialidades:** Fisioterapia Ortopédica, Terapia Manual, Reabilitação de Coluna, Pós-Operatório, Fisioterapia Esportiva e Atendimento Domiciliar (Home Care).
-- **Endereço Físico:** Rod. Tertuliano Brito Xavier, 210 - Canasvieiras, Florianópolis - SC, CEP 88054-000.
+- **Endereço:** Atendimento Domiciliar (Home Care) em Florianópolis - SC. Em breve em novo endereço físico!
 - **Contato / Agendamentos:** Telefone / WhatsApp: (48) 99103-3490.
 - **Raio de Atendimento Primário:** Canasvieiras, Jurerê Internacional, Jurerê Tradicional, Cachoeira do Bom Jesus, Ponta das Canas, Ingleses, Vargem Grande, Santo Antônio de Lisboa e Norte da Ilha.
 - **Comportamento do Usuário:** 
@@ -82,7 +82,7 @@ O Google Business Profile é o **fator #1 de atração de novos pacientes** para
 ### 4.1 Consistência Rígida de NAP (Name, Address, Phone)
 O nome, endereço e telefone devem ser **idênticos** em todas as fontes (Site, Google Maps, Doctoralia, Redes Sociais, Apple Maps):
 - **Nome:** Dra. Larissa Ramos - Fisioterapia Especializada
-- **Endereço:** Rod. Tertuliano Brito Xavier, 210, Canasvieiras, Florianópolis - SC, 88054-000
+- **Endereço / Atendimento:** Florianópolis - SC (Atendimento Domiciliar • Em breve novo endereço)
 - **Telefone:** (48) 99103-3490
 - **Website:** https://www.larissaramos.com.br/
 
