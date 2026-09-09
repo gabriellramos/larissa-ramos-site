@@ -13,27 +13,26 @@ export const About = () => {
       <Container>
         <ScrollReveal>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-          <div className="relative w-full max-w-sm mx-auto h-auto pt-8">
+          <div className="relative w-full max-w-sm mx-auto">
             {/* Ambient glowing backdrops - Static for top-tier GPU performance */}
             <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/20 rounded-full blur-3xl -z-20" />
             <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cta/15 rounded-full blur-3xl -z-20" />
             
-            {/* Tall elegant glass shield behind the portrait */}
-            <div className="absolute inset-0 w-full h-full rounded-[3.5rem] bg-gradient-to-b from-surface-container/30 to-surface/40 backdrop-blur-xl border border-outline/10 shadow-[0_30px_60px_rgba(0,0,0,0.06)] -z-10" />
-            
-            {/* Image Wrapper (clips the bottom to match the shield's border radius) */}
-            <div className="relative w-full flex items-end justify-center rounded-b-[3.5rem] overflow-hidden">
+            {/* Main Image Frame - Preenche o quadro perfeitamente */}
+            <div className="relative w-full aspect-[2/3] rounded-[3rem] sm:rounded-[3.5rem] overflow-hidden border border-outline/15 shadow-[0_30px_60px_rgba(0,0,0,0.12)] bg-surface-container group">
               <img 
                 src="/profile.webp" 
                 alt="Dra. Larissa Ramos" 
-                className="w-full h-auto object-contain object-bottom relative z-10 select-none transform hover:scale-[1.03] transition-transform duration-500 origin-bottom will-change-transform"
+                className="w-full h-full object-cover object-center select-none transform group-hover:scale-105 transition-transform duration-700 ease-out will-change-transform"
                 loading="eager"
                 fetchPriority="high"
               />
+              {/* Sutil gradiente para acabamento e contraste */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10 pointer-events-none" />
             </div>
 
             {/* Floating Glass Tag 1: CREFITO Registration with hardware-acceleration */}
-            <div className="absolute top-12 left-2 sm:left-6 z-20 bg-surface/75 backdrop-blur-md border border-outline/15 px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 will-change-transform">
+            <div className="absolute top-6 left-3 sm:left-5 z-20 bg-surface/85 backdrop-blur-md border border-outline/20 px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 will-change-transform">
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <span className="text-xs font-bold tracking-wider text-surface-text uppercase font-sans">
                 CREFITO 10/279910-F
@@ -41,7 +40,7 @@ export const About = () => {
             </div>
 
             {/* Floating Glass Card 2: Years of Experience with hardware-acceleration */}
-            <div className="absolute bottom-8 right-2 sm:right-6 z-20 bg-surface/80 backdrop-blur-lg border border-outline/15 p-4 rounded-3xl shadow-xl flex items-center gap-3 transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 max-w-[190px] will-change-transform">
+            <div className="absolute bottom-6 right-3 sm:right-5 z-20 bg-surface/90 backdrop-blur-lg border border-outline/20 p-4 rounded-3xl shadow-xl flex items-center gap-3 transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 max-w-[190px] will-change-transform">
               <div className="text-4xl font-extrabold text-primary font-sans leading-none tracking-tight">
                 +8
               </div>
